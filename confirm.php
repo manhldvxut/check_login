@@ -20,40 +20,24 @@
 <main>
     <div class="container">
         <div class="header">
-            <h2>Đăng ký Form</h2>
+            <h2>confirm thành công</h2>
             <div><i style='font-size:24px' class='fas'>&#xf2bd;</i></div>
         </div>
-            <form action="" class="main-form" onsubmit="return login()">
-                <div class="form">
+        <div class="con_fix">
+            <div class="form">
                     <label for="">Username</label>
-                    <input type="text" placeholder="Enter your username" id="username" autocomplete="off">
-                    <i class="fas sucess">&#xf058;</i>
-                    <i class="fas error">&#xf06a;</i>
-                    <small class="message">error message</small>
+                    <p id="username_conf"></p>
                 </div>
                 <div class="form">
                     <label for="">Email</label>
-                    <input type="email" placeholder="Enter your valid email" id="email" autocomplete="off">
-                    <i class="fas sucess">&#xf058;</i>
-                    <i class="fas error">&#xf06a;</i>
-                    <small class="message">error message</small>
+                    <p id="email_conf"></p>
                 </div>
                 <div class="form">
                     <label for="">Password</label>
-                    <input type="password" placeholder="Enter your password" id="password1" autocomplete="off">
-                    <i class="fas sucess">&#xf058;</i>
-                    <i class="fas error">&#xf06a;</i>
-                    <small class="message">error message</small>
+                    <p id="password_conf"></p>
                 </div>
-                <div class="form">
-                    <label for="">Password check</label>
-                    <input type="password" placeholder="Please re-enter your password" id="password2" autocomplete="off">
-                    <i class="fas sucess">&#xf058;</i>
-                    <i class="fas error">&#xf06a;</i>
-                    <small class="message">error message</small>
-                </div>
-                <button>submit</button> 
-            </form>
+                <button>send</button>
+        </div>
     </div>
 </main>
 <footer id="footer">
