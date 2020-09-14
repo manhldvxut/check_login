@@ -7,6 +7,7 @@ const password2 = document.getElementById("password2");
 const message = document.getElementsByClassName("message");
 const sucess = document.getElementsByClassName("sucess");
 const error = document.getElementsByClassName("error");
+const face_sty = document.getElementById("face_style");
 let u=0; //username
 let e=0; //mail
 let p1=0; // pass
@@ -21,6 +22,10 @@ function login(){
 
 	var conf_user = $("#username").val();
 	var conf_email = $("#email").val();
+	var conf_face = $("#facebook").val();
+	if(conf_face ==""){
+		face_sty.style.display = 'none';
+	}
 	// check username
 	if(username.value == ""){
 		username.style.borderColor = 'red';
@@ -164,6 +169,7 @@ function login(){
 	if(u ==1 && e==1 && p1==1 && p2==1){
 		document.getElementById('username_conf').innerHTML = conf_user;
 		document.getElementById('email_conf').innerHTML = conf_email;
+		document.getElementById('face_conf').innerHTML = conf_face;
 		form_top.style.display = 'none';
 		conf_form.style.display = 'block';
 

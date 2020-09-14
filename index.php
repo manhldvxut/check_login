@@ -53,6 +53,10 @@
                         <i class="fas error">&#xf06a;</i>
                         <small class="message">error message</small>
                     </div>
+                    <div class="form">
+                        <label for="">facebook</label>
+                        <input type="facebook" placeholder="Enter your facebook" id="facebook" autocomplete="off">
+                    </div>
                     <button type="submit" form="form">submit</button> 
                 </form>
         </div>
@@ -71,6 +75,10 @@
                 <div class="form">
                     <label for="">Email</label>
                     <p id="email_conf"></p>
+                </div>
+                <div id="face_style" class="form">
+                    <label for="">Facebook</label>
+                    <p id="face_conf"></p>
                 </div>
                 <button>send</button>
             </div>
